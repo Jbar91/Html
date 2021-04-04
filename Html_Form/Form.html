@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Joseba Ibarlucea">
+    <meta description="A form page made with html as a practice exercise.">
+    <title>Form Page</title>
+</head>
+<body>
+    <form id="main-form">
+      <div><center>
+					<header id="main-header">
+            <h1>Service Survey</h1>
+            <p><i>Thanks for taking the time to rate our service</i></p>
+						<br>
+					</header>
+        <section id="name-email-section">
+					<div id="text-div">
+						<label for="name-input">Name:</label>
+            <input type="text" name="name-input" placeholder="Please enter your name..." required>
+					</div>
+					<br>
+					<div id="email-div">
+						<label for="email-input">Email:</label>
+						<input type="email" name="email-input" pattern="+@gmail.com, +@hotmail.com, +@outlook.com" 
+						placeholder="Enter your email..." required>
+					</div>		
+					<br>
+        </section>
+				<section id="radios-checkboxes">
+					<h2 id="service-questions">Please tell us how was our service:</h2>
+					<div id="radio-btns">
+						<label for="good-service">Good</label><input id="good-service"type="radio" name="service" value="good"checked>
+						<label for="acceptable-service">Acceptable<input id="acceptable-service" type="radio" name="service" value="acceptable"></label>
+						<label for="bad-service">Bad<input id="bad-service" type="radio" name="service" value="bad"></label>
+					</div>
+					<div id="checkboxes">
+						<h3>What food did you order?</h3>
+						<input id="steak" type="checkbox" name="food" value="steak"><label for="steak">Steak</label>
+						<input id="cheeseburguer" type="checkbox" name="food" value="cheeseburguer"><label for="cheeseburguer">Cheeseburguer</label>
+						<br>
+						<input id="short-pasta" type="checkbox" name="food" value="short-pasta"><label for="short-pasta">Short Pasta</label>
+						<input id="long-pasta" type="checkbox" name="food" value="long-pasta"><label for="long-pasta">Long Pasta</label>
+						<br>
+						<input id="nuggets" type="checkbox" name="food" value="nuggets"><label for="nuggets">Chicken Nuggets</label>
+						<input id="fish-chips" type="checkbox" name="food" value="fish-chips"><label for="fish-chips">Fish and Chips</label>
+						<br>
+						<input id="cake" type="checkbox" name="food" value="cake"><label for="cake">Cake</label>
+						<input id="ice-cream" type="checkbox" name="food" value="ice-cream"><label for="ice-cream">Ice Cream</label>
+						<input id="cheesecake" type="checkbox" name="food" value="cheesecake"><label for="cheesecake">Cheesecake</label>
+					</div>
+				</section>
+				<section id="comments">
+					<h3>Any comment to add?</h3>
+					<textarea id="commentaries" name="commentaries" rows="5" cols="25" placeholder="Enter your comment"></textarea>
+				</section>
+				<input type="submit" formmethod="POST" formaction="Thanks.html">
+			</center></div>	
+    </form>
+</html>
