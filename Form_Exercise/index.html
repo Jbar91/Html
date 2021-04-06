@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joseba Ibarlucea">
+    <meta name="description" content="A more thorough exercise of html forms">
+    <title>Adoption Center</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Tell us a little bit about yourself</h1>
+        <p><i>Please answer the following questions to get to know you</i></p>
+    </header>
+    <section id="name-section">
+      <h3>Tell us your name</h3>
+      <label id="name-text">Name:</label><input type="text" placeholder="Enter your name">
+      <label id="lname-text">Last Name:</label><input type="text" placeholder="Enter your last name">
+    </section>
+    <form id="main-form">
+        <section id="animal-questions">
+            <fieldset id="radio-fieldset" class="radio-checkbox">
+                <legend>Have you had a pet before?</legend>
+                <label for="yes">Yes</label><input type="radio" id="yes"name="prior-pet" value="Yes"><br>
+
+                <label for="no">No</label><input type="radio" id="no" name="prior-pet" value="No"><br>
+
+                <label for="as-kid">As a kid</label><input type="radio" id="as-kid" name="prior-pet" value="A-little-bit"><br>
+            </fieldset>
+            <fieldset id="checkbox-fieldset" class="radio-checkbox">
+                <legend>What are you looking to adopt?</legend>
+                <label for="dog">Dog</label><input type="checkbox" id="dog" name="animals" value="dog">
+
+                <label for="cat">Cat</label><input type="checkbox" id="cat" name="animals" value="cat">
+
+                <label for="bunny">Bunny</label><input type="checkbox" id="bunny" name="animals" value="cat">
+
+                <label for="hamster">Hamster</label><input type="checkbox" id="hamster" name="animals" value="hamster">
+
+                <label for="turtle">Turtle</label><input type="checkbox" id="turtle" name="animals" value="turtle">
+
+                <label for="fish">Fish</lable><input type="checkbox" id="fish" name="animals" value="fish">
+            </fieldset>
+        </section>
+        <section id="pros-animals">
+            <h3 id="goods-list">Here's a list of good things of each animal</h3>
+            <h4 class="lists">Dog</h4>
+            <ul>
+                <li>Great companion</li>
+                <li>Good with children</li>
+                <li>Their tails wiggle when you get home</li>
+            </ul>
+            <h4 class="lists">Cat</h4>
+            <ul>
+                <li>Will catch mouses for you</li>
+                <li>They are cuddle bugs (most of them)</li>
+                <li>Like to chase lasers, that's something cool</li>
+            </ul>
+            <h4 class="lists">Bunny</h4>
+            <ul>
+                <li>Will hop around with you</li>
+                <li>"What's up Doc"</li>
+                <li>Easy to feed</li>
+            </ul>
+            <h4 class="lists">Hamster</h4>
+            <ul>
+                <li>Are really cute</li>
+                <li>Can roll around the house in a plastic ball</li>
+                <li>Really playfull</li>
+            </ul>
+            <h4 class="lists">Turtle</h4>
+            <ul>
+                <li>Beat the Bunny in a race</li>
+                <li>Will probably outlive you</li>
+                <li>Can name it "Bowser"</li>
+            </ul>
+            <h4 class="lists">Fish</h4>
+            <ul>
+                <li>Great listener</li>
+                <li>Cool to have a whole aquarium</li>
+                <li>Just keep swimming</li>
+            </ul>
+        </section>
+    </form>
+</body>
+</html>
