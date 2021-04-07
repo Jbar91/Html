@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joseba Ibarlucea">
     <meta name="description" content="A more thorough exercise of html forms">
+    <link href="main.css" rel="stylesheet">
     <title>Adoption Center</title>
 </head>
-<body>
-    <header id="header">
+<body>   
+     <header id="header">
         <h1>Tell us a little bit about yourself</h1>
         <p><i>Please answer the following questions to get to know you</i></p>
     </header>
-    <section id="name-section">
-      <h3>Tell us your name</h3>
-      <label id="name-text">Name:</label><input type="text" placeholder="Enter your name">
-      <label id="lname-text">Last Name:</label><input type="text" placeholder="Enter your last name">
-    </section>
+    <!--This form contains two types of input (radio and checkbox), has two fieldsets to separate both of the questions
+    and contains images as icons for the pet adoption part-->
     <form id="main-form">
+        <section id="name-section">
+        <h3>Tell us your name</h3>
+        <label id="name-text">Name:</label><input type="text" placeholder="Enter your name">
+        <label id="lname-text">Last Name:</label><input type="text" placeholder="Enter your last name">
+        </section>
         <section id="animal-questions">
             <fieldset id="radio-fieldset" class="radio-checkbox">
                 <legend>Have you had a pet before?</legend>
@@ -30,20 +33,21 @@
             </fieldset>
             <fieldset id="checkbox-fieldset" class="radio-checkbox">
                 <legend>What are you looking to adopt?</legend>
-                <label for="dog">Dog</label><input type="checkbox" id="dog" name="animals" value="dog">
+                <label for="dog"><img src="Images/dog-img.png" class="btns-image">Dog</label><input type="checkbox" id="dog" name="animals" value="dog">
 
-                <label for="cat">Cat</label><input type="checkbox" id="cat" name="animals" value="cat">
+                <label for="cat"><img src="Images/cat-img.jfif" class="btns-image">Cat</label><input type="checkbox" id="cat" name="animals" value="cat">
 
-                <label for="bunny">Bunny</label><input type="checkbox" id="bunny" name="animals" value="cat">
+                <label for="bunny"><img src="Images/bunny-img.jfif" class="btns-image">Bunny</label><input type="checkbox" id="bunny" name="animals" value="cat">
 
-                <label for="hamster">Hamster</label><input type="checkbox" id="hamster" name="animals" value="hamster">
+                <label for="hamster"><img src="Images/hamster-img.png" class="btns-image">Hamster</label><input type="checkbox" id="hamster" name="animals" value="hamster">
 
-                <label for="turtle">Turtle</label><input type="checkbox" id="turtle" name="animals" value="turtle">
+                <label for="turtle"><img src="Images/turtle-img.jfif" class="btns-image">Turtle</label><input type="checkbox" id="turtle" name="animals" value="turtle">
 
-                <label for="fish">Fish</lable><input type="checkbox" id="fish" name="animals" value="fish">
+                <label for="fish"><img src="Images/fish-img.jfif" class="btns-image">Fish</lable><input type="checkbox" id="fish" name="animals" value="fish">
             </fieldset>
         </section>
         <section id="pros-animals">
+            <!--This section contains the lists of good things each animal has and can be worked further on-->
             <h3 id="goods-list">Here's a list of good things of each animal</h3>
             <h4 class="lists">Dog</h4>
             <ul>
@@ -55,12 +59,12 @@
             <ul>
                 <li>Will catch mouses for you</li>
                 <li>They are cuddle bugs (most of them)</li>
-                <li>Like to chase lasers, that's something cool</li>
+                <li>Likes to chase lasers, that's something cool!</li>
             </ul>
             <h4 class="lists">Bunny</h4>
             <ul>
                 <li>Will hop around with you</li>
-                <li>"What's up Doc"</li>
+                <li>"What's up Doc?"</li>
                 <li>Easy to feed</li>
             </ul>
             <h4 class="lists">Hamster</h4>
@@ -73,7 +77,7 @@
             <ul>
                 <li>Beat the Bunny in a race</li>
                 <li>Will probably outlive you</li>
-                <li>Can name it "Bowser"</li>
+                <li>Can be named "Bowser"</li>
             </ul>
             <h4 class="lists">Fish</h4>
             <ul>
@@ -83,5 +87,52 @@
             </ul>
         </section>
     </form>
+    <section id="info-section">
+        <!--A table with main information on each animal, their diets, lifespan and more info in an external link-->
+        <h2>Here's a little info about them</h2>
+        <p><i>The following table includes their lifespan, diet and more info on breeds and species</i></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Info</th>
+                    <th>Dogs</th>
+                    <th>Cats</th>
+                    <th>Bunny</th>
+                    <th>Hamster</th>
+                    <th>Turtle</th>
+                    <th>Fish</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="first-column">Lifespan</td>
+                    <td>10-14 years</td>
+                    <td>2-16 years</td>
+                    <td>8-14 years</td>
+                    <td>2-3 years</td>
+                    <td>15-55 years</td>
+                    <td>2-6 years</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Diet</td>
+                    <td>Kibbles and/or cooked food</td>
+                    <td>Foods rich in proteins and fats</td>
+                    <td>Vegetables</td>
+                    <td>Seeds, grains, nuts</td>
+                    <td>Fruits, berries and vegetables</td>
+                    <td>Staples or flakes</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Breeds and Species</td>
+                    <td><a href="https://dogtime.com/dog-breeds/profiles">Dogs Breeds</a></td>
+                    <td><a href="https://www.petfinder.com/cat-breeds/">Cats Breeds</a></td>
+                    <td><a href="https://www.thesprucepets.com/rabbit-breeds-1237186">Bunnies Breeds</a></td>
+                    <td><a href="https://squeaksandnibbles.com/hamster-breeds/">Hamster Breeds</a></td>
+                    <td><a href="https://www.thesprucepets.com/turtle-species-great-pets-4788330">Turtles Species</a></td>
+                    <td><a href="https://www.fishkeepingworld.com/17-most-popular-freshwater-fish/">Fish Species</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
