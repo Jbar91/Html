@@ -11,27 +11,27 @@
         <fieldset>
             <legend>Registrarse</legend>
             <label for="name">Nombre:
-              <input type="text" required>
+              <input id="name" type="text" value="" required>
             </label>
             <br>
-            <label for="first last name">Primer apellido:
-              <input type="text" required>
+            <label for="first-last-name">Primer apellido:
+              <input id="first-last-name" type="text" value="" required>
             </label>
             <br>
-            <label for="second last name">Segundo apellido:*
-                <input type="text">
+            <label for="second-last-name">Segundo apellido:*
+                <input id="second-last-name" type="text" value="">
             </label>
             <br>
             <label for="email">correo electronico:
-                <input type="email" required>
+                <input id="email" type="email" value="" required>
             </label>
             <br>
             <label for="password">contraseña: 
-                <input type="text" required>
+                <input id="password" type="text" value="" required>
             </label>
             <br>
             <label for="birthday">fecha de nacimiento:
-                <input type="date" required>
+                <input id="birthday" type="date" value="" required>
             </label>
             <br>
             <label for="nationality">nacionalidad:*
@@ -281,7 +281,7 @@
                 <input id="female" type="radio" name="gender" value="female"> mujer
             </label>
             <br>
-            <button type="submit" formaction="first.html">Registrarse</button>
+            <button type="submit" formaction="first.html" formmethod="POST">Registrarse</button>
         </fieldset>
     </form>
     <p>
