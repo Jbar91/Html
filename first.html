@@ -10,15 +10,21 @@
       <meta description="Pagina sobre Madrid">
     </head>
     <body>
+      <header>
       <h1>Paseo por Madrid</h1>
+      </header>
+      <section id="log-in">
+      <p>Para mejorar la experiencia inicie sesion. Si no tiene cuenta registrese <a href="third.html">aquí</a></p>
       <h3>Iniciar sesión</h3>
       <form>
         <input type="email" placeholder="correo electronico" required>
         <input type="password" placeholder="contraseña" required>
         <button type="submit">iniciar sesion</button>
       </form>
+      </section>
          <br>
         <p>Conozcamos un poco de Madrid</p>
+      <section id="personal-information">
       <form> 
       <h2>¿De donde vienes?</h2>
         <label for="residente-madrid">
@@ -30,7 +36,9 @@
          <label for="otros-paises">
            <input id="otros-paises" type="radio" name="localizacion" value="otros-paises"> otros paises
          </label>
+        </section>
       <br>
+      <section id="tourist-sites">
       <h2>Sitios turisticos por visitar</h2>
       <p>Aqui tenemos una lista de los principales sitios turisticos que visitar en Madrid. Al visitarlos marca la casilla correspondiente</p>
         <label for="Museo-del-prado">
@@ -53,12 +61,59 @@
           <input id="Gran-via" type="checkbox" name="visitas" value="Gran-via">Gran Via
         </label> 
         <br>
-        <button type="submit" formaction="second.html">Enviar</button>
-       </form>
-       <br>
-      <div>
+        <button type="submit" formaction="second.html">Enviar</button> 
+        </form>
+       <div>
+        <br>
         <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fdynamic-media-cdn.tripadvisor.com%2Fmedia%2Fphoto-o%2F15%2F34%2F00%2F95%2Fcommunity-of-madrid.jpg%3Fw%3D1100%26h%3D600%26s%3D1&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com%2FTourism-g562642-Community_of_Madrid-Vacations.html&tbnid=atjSPf6m2nudOM&vet=12ahUKEwiH_OCdg9bvAhVE8IUKHW4SCLIQMygEegUIARDaAQ..i&docid=mgd7nk58agTE4M&w=1100&h=600&q=madrid&ved=2ahUKEwiH_OCdg9bvAhVE8IUKHW4SCLIQMygEegUIARDaAQ" target="_top"><img src="download.jfif" alt="paisaje de madrid"/></a>
       </div>
+      <br>
+      <br>
+      </section>
+      <br>
+      <section id="comments">
+        <h3>Agregar comentarios o sugerencias</h3>
+        <textarea id="comments" name="comentarios" rows="5" cols="40" placeholder="comentarios"></textarea>
+      </section>
+      <br>
+      <hr>
+      <section id="more-information">
+        <footer>
+         <table border>
+           <tr>
+             <th>museo del prado</th>
+             <td><a href="https://www.esmadrid.com/informacion-turistica/museo-del-prado" target="_blank">más información</a></td>
+             <td><a href="https://www.google.com/maps/place/Museo+Nacional+del+Prado/@40.4137818,-3.6943211,17z/data=!3m1!4b1!4m5!3m4!1s0xd42289d66d8a2ed:0x1094f07d93ad885a!8m2!3d40.4137818!4d-3.6921271" target="_blank">como llegar</a></td>
+          </tr>
+          <tr>
+            <th>Parque de El Retiro</th>
+            <td><a href="https://www.esmadrid.com/informacion-turistica/parque-del-retiro" target="_blank">más información</a></td>
+            <td><a href="https://www.google.com/maps/place/Parque+de+El+Retiro/@40.4152606,-3.6866935,17z/data=!3m1!4b1!4m5!3m4!1s0xd42289ff511827b:0x9e6c2716b524a3ae!8m2!3d40.4152606!4d-3.6844995" target="_blank">como llegar</a></td>
+          </tr>
+          <tr>
+            <th>Palacio Real</th>
+            <td><a href="https://www.esmadrid.com/informacion-turistica/palacio-real" target="_blank">más información</a></td>
+            <td><a href="https://www.google.es/maps/place/Palacio+Real+de+Madrid/@40.417955,-3.716506,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287e7da4a9c1:0x2e7fec79d6ce4851!8m2!3d40.417955!4d-3.714312" target="_blank">como llegar</a></td>
+          </tr>
+          <tr>
+            <th>Puerta del Sol</th>
+            <td><a href="https://www.esmadrid.com/informacion-turistica/puerta-del-sol" target="_blank">más información</a></td>
+            <td><a href="https://www.google.es/maps/place/Puerta+del+Sol,+Madrid/@40.4169019,-3.7056774,17z/data=!3m1!4b1!4m5!3m4!1s0xd422880a07d7dc7:0x694aee57da1dc679!8m2!3d40.4169473!4d-3.7035285" target="_blank">como llegar</a></td>
+          </tr>
+          <tr>
+            <th>Plaza Mayor</th>
+            <td><a href="https://www.esmadrid.com/informacion-turistica/plaza-mayor-madrid" target="_blank">más información</a></td>
+            <td><a href="https://www.google.es/maps/place/Plaza+Mayor,+Madrid/@40.4153754,-3.708283,18z/data=!3m1!4b1!4m5!3m4!1s0xd42287ed85fe0d9:0xd202c4f0d67625e8!8m2!3d40.4156181!4d-3.707023" target="_blank">como llegar</a></td>
+          </tr>
+          <tr>
+            <th>Gran Via</th>
+            <td><a href="https://www.esmadrid.com/informacion-turistica/la-gran-via" target="_blank">más información</a></td>
+            <td><a href="https://www.google.es/maps/place/C%2F+Gran+V%C3%ADa,+Madrid/@40.4189611,-3.6990114,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287d6da3df33:0xe119406d894c5d21!8m2!3d40.4189611!4d-3.6968174" target="_blank">como llegar</a></td>
+          </tr>
+         </table>
+        </footer>
+      </section>
+
       </body>
 
 
