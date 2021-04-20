@@ -2,6 +2,7 @@
 <html>
     <head>
       <title>first page HTML</title>
+      <link rel="stylesheet" type="text/css" href="first.css">
       <meta lang="en">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,74 +13,88 @@
     <body>
       <header>
       <h1>Paseo por Madrid</h1>
-      </header>
       <section id="log-in">
-      <p>Para mejorar la experiencia inicie sesion. Si no tiene cuenta registrese <a href="third.html">aquí</a></p>
-      <h3>Iniciar sesión</h3>
-      <form>
-        <input type="email" placeholder="correo electronico" required>
-        <input type="password" placeholder="contraseña" required>
-        <button type="submit">iniciar sesion</button>
+        <h3 id="inicio">Iniciar sesión</h3>
+        <form>
+          <input type="email" placeholder="correo electronico" required>
+          <input type="password" placeholder="contraseña" required>
+          <button type="submit">iniciar sesion</button>
+          <p id="registro">Para mejorar la experiencia inicie sesion. Si no tiene cuenta registrese <a href="third.html">aquí</a></p>
       </form>
       </section>
+      </header>
          <br>
-        <p>Conozcamos un poco de Madrid</p>
+      <main>
       <section id="personal-information">
-      <form> 
-      <h2>¿De donde vienes?</h2>
-        <label for="residente-madrid">
-           <input id="residente-madrid" type="radio" name="localizacion" value="residente-madrid" required> Residente en Madrid 
+        <h2>¿De donde vienes?</h2>
+        <form> 
+        <label for="residente-madrid" class="selector">
+           <input id="residente-madrid" class="selector" type="radio" name="localizacion" value="residente-madrid" required> Residente en Madrid 
          </label>
-         <label for="otras-ciudades-españa">
-           <input id="otras-ciudades-españa" type="radio" name="localizacion" value="otras-ciudades-españa"> otras ciudades de España
+         <label for="otras-ciudades-españa" class="selector">
+           <input id="otras-ciudades-españa"  class="selector" type="radio" name="localizacion" value="otras-ciudades-españa"> otras ciudades de España
          </label>
-         <label for="otros-paises">
-           <input id="otros-paises" type="radio" name="localizacion" value="otros-paises"> otros paises
+         <label for="otros-paises" class="selector">
+           <input id="otros-paises"  class="selector" type="radio" name="localizacion" value="otros-paises"> otros paises
          </label>
         </section>
       <br>
       <section id="tourist-sites">
       <h2>Sitios turisticos por visitar</h2>
       <p>Aqui tenemos una lista de los principales sitios turisticos que visitar en Madrid. Al visitarlos marca la casilla correspondiente</p>
-        <label for="Museo-del-prado">
-          <input id="Museo-del-prado" type="checkbox" name="visitas" value="Museo-del-prado"> Museo del Prado
+        <label for="Museo-del-prado" class="selector">
+          <input id="Museo-del-prado"  class="selector" type="checkbox" name="visitas" value="Museo-del-prado"> Museo del Prado
         </label>
-        <label for="Palacio-real">
-          <input id="Palacio-real" type="checkbox" name="visitas" value="Palacio-real">Palacio Real
+        <label for="Palacio-real" class="selector">
+          <input id="Palacio-real"  class="selector" type="checkbox" name="visitas" value="Palacio-real">Palacio Real
         </label>
-        <label for="Plaza-mayor">
-          <input id="Plaza-mayor" type="checkbox" name="visitas" value="Plaza-mayor">Plaza Mayor 
+        <label for="Plaza-mayor" class="selector">
+          <input id="Plaza-mayor"  class="selector" type="checkbox" name="visitas" value="Plaza-mayor">Plaza Mayor 
         </label>
         <br>
-        <label for="Parque-retiro">
-          <input id="Parque-retiro" type="checkbox" name="visitas" value="Parque-retiro">Parque de El Retiro 
+        <label for="Parque-retiro" class="selector">
+          <input id="Parque-retiro"  class="selector" type="checkbox" name="visitas" value="Parque-retiro">Parque de El Retiro 
         </label>
-        <label for="Puerta-sol">
-          <input id="Puerta-sol" type="checkbox" name="visitas" value="Puerta-sol">Puerta del Sol
+        <label for="Puerta-sol" class="selector">
+          <input id="Puerta-sol"  class="selector" type="checkbox" name="visitas" value="Puerta-sol">Puerta del Sol
         </label>
-        <label for="Gran-via">
-          <input id="Gran-via" type="checkbox" name="visitas" value="Gran-via">Gran Via
+        <label for="Gran-via" class="selector">
+          <input id="Gran-via"  class="selector" type="checkbox" name="visitas" value="Gran-via">Gran Via
         </label> 
         <br>
-        <button type="submit" formaction="second.html">Enviar</button> 
+        <button class="selector" type="submit" formaction="second.html">Enviar</button> 
         </form>
        <div>
         <br>
-        <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fdynamic-media-cdn.tripadvisor.com%2Fmedia%2Fphoto-o%2F15%2F34%2F00%2F95%2Fcommunity-of-madrid.jpg%3Fw%3D1100%26h%3D600%26s%3D1&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com%2FTourism-g562642-Community_of_Madrid-Vacations.html&tbnid=atjSPf6m2nudOM&vet=12ahUKEwiH_OCdg9bvAhVE8IUKHW4SCLIQMygEegUIARDaAQ..i&docid=mgd7nk58agTE4M&w=1100&h=600&q=madrid&ved=2ahUKEwiH_OCdg9bvAhVE8IUKHW4SCLIQMygEegUIARDaAQ" target="_top"><img src="download.jfif" alt="paisaje de madrid"/></a>
+        <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fdynamic-media-cdn.tripadvisor.com%2Fmedia%2Fphoto-o%2F15%2F34%2F00%2F95%2Fcommunity-of-madrid.jpg%3Fw%3D1100%26h%3D600%26s%3D1&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com%2FTourism-g562642-Community_of_Madrid-Vacations.html&tbnid=atjSPf6m2nudOM&vet=12ahUKEwiH_OCdg9bvAhVE8IUKHW4SCLIQMygEegUIARDaAQ..i&docid=mgd7nk58agTE4M&w=1100&h=600&q=madrid&ved=2ahUKEwiH_OCdg9bvAhVE8IUKHW4SCLIQMygEegUIARDaAQ" target="_top"><img id="first-image" src="download.jfif" alt="paisaje de madrid"/></a>
       </div>
+      <section>
+      <h2>Galeria</h2>
+      <div id="galeria">
+      <img class="imagen-galeria" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg" alt="Museo del Prado"/>
+      <img class="imagen-galeria" src="https://www.patrimonionacional.es/sites/default/files/styles/full/public/2020-05/3-palacio_real_cabecera_fachada_principal_.jpg?itok=MtNOaSnF" alt="Palacio Real"/>
+      <img class="imagen-galeria" src="https://www.vipealo.com/blog/wp-content/uploads/2020/09/Historia-de-Madrid-758x513.jpg" alt="Plaza Mayor"/>
+      <br>
+      <img class="imagen-galeria" src="https://cdn2.civitatis.com/espana/madrid/guia/el-retiro.jpg" alt="Parque El Retiro"/>
+      <img class="imagen-galeria" src="https://hiretail.es/wp-content/uploads/2020/01/puerta-del-sol.jpg" alt="Puerta del Sol"/>
+      <img class="imagen-galeria" src="https://www.esmadrid.com/sites/default/files/styles/large/public/la_gran_via_vertical.jpg?itok=iv_xm_x_" alt="Gran via"/>
+      </div>
+    </section>
+    </main>
       <br>
       <br>
       </section>
       <br>
-      <section id="comments">
-        <h3>Agregar comentarios o sugerencias</h3>
-        <textarea id="comments" name="comentarios" rows="5" cols="40" placeholder="comentarios"></textarea>
-      </section>
-      <br>
-      <hr>
-      <section id="more-information">
+      <section id="comments-and-more-information">
         <footer>
-         <table border>
+        <h3>Agregar comentarios o sugerencias</h3>
+        <div id="aling">
+        <form>
+        <textarea id="comments" name="comentarios" rows="6" cols="40" placeholder="comentarios"></textarea>
+        <br>
+        <button class="selector" type="submit">Enviar</button>
+        </form>
+         <table id="more-information">
            <tr>
              <th>museo del prado</th>
              <td><a href="https://www.esmadrid.com/informacion-turistica/museo-del-prado" target="_blank">más información</a></td>
@@ -111,6 +126,7 @@
             <td><a href="https://www.google.es/maps/place/C%2F+Gran+V%C3%ADa,+Madrid/@40.4189611,-3.6990114,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287d6da3df33:0xe119406d894c5d21!8m2!3d40.4189611!4d-3.6968174" target="_blank">como llegar</a></td>
           </tr>
          </table>
+        </div>
         </footer>
       </section>
 
